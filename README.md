@@ -2,6 +2,15 @@
 
 Author: Graham Markall, NVIDIA <gmarkall@nvidia.com>.
 
+## Environments and Start
+
+``` sh
+poetry env use python
+poetry shell
+poetry install --no-root  # note: compiling `cupy` will spend a lot of time
+
+jupyter lab --ip='0.0.0.0' --port='9088' --allow-root --NotebookApp.token='' --NotebookApp.password=''
+```
 
 ## What is this course?
 
